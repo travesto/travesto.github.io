@@ -115,19 +115,19 @@ header .intro-text .skills {
   outline: none;
 }
 .navbar-custom .navbar-brand {
-  color: #ACCFCC;
+  color: #FFFFFF;
 }
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus,
 .navbar-custom .navbar-brand:active,
 .navbar-custom .navbar-brand.active {
-  color: #ACCFCC;
+  color: #B8AE9C;
 }
 .navbar-custom .navbar-nav {
   letter-spacing: 1px;
 }
 .navbar-custom .navbar-nav li a {
-  color: #ACCFCC;
+  color: #FFFFFF;
 }
 .navbar-custom .navbar-nav li a:hover {
   color: #B8AE9C;
@@ -148,16 +148,16 @@ header .intro-text .skills {
   background: #FFFFFF;
 }
 .navbar-custom .navbar-toggle {
-  color: #ACCFCC;
+  color: #FFFFFF;
   text-transform: uppercase;
   font-size: 10px;
-  border-color: #ACCFCC;
+  border-color: #FFFFFF;
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-  background-color: #B8AE9C;
-  color: #ACCFCC;
-  border-color: #B8AE9C;
+  background-color: #FFFFFF;
+  color: #8A0917;
+  border-color: #FFFFFF;
 }
 @media (min-width: 768px) {
   .navbar-custom {
@@ -250,7 +250,8 @@ section.success {
   position: relative;
   margin-bottom: 0;
   padding-bottom: 0.5em;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #595241;
+  color: #FFFFFF;
 }
 .floating-label-form-group input,
 .floating-label-form-group textarea {
@@ -264,6 +265,7 @@ section.success {
   background: none;
   box-shadow: none !important;
   resize: none;
+  color: #FFFFFF;
 }
 .floating-label-form-group label {
   display: block;
