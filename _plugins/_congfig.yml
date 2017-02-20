@@ -1,0 +1,8 @@
+gems: [jekyll-coffeescript, jekyll-watch, jekyll-assets]
+# This will require each of these gems automatically.
+gems:
+  - jekyll-seo-tag
+  title: Travis Cook
+  description: Travis Cook UX // Full Stack Development
+  url: travesto.github.io 
+  
