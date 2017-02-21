@@ -24,6 +24,7 @@ a.active {
 }
 ul {
   font-size: 125%;
+  align-content: left;
 }
 h1,
 h2,
@@ -123,11 +124,12 @@ header .intro-text .skills {
 .navbar-custom .navbar-brand {
   color: #FFFFFF;
 }
-.navbar-custom .navbar-brand:hover,
-.navbar-custom .navbar-brand:focus,
-.navbar-custom .navbar-brand:active,
-.navbar-custom .navbar-brand.active {
+.navbar-custom .navbar-brand:hover{
   color: #B8AE9C;
+}
+.navbar-custom .navbar-brand:focus,
+.navbar-custom .navbar-brand.active {
+  color: #FFFFFF;
 }
 .navbar-custom .navbar-nav {
   letter-spacing: 1px;
@@ -453,6 +455,14 @@ fieldset[disabled] .btn-success.active {
 .scroll-top .btn:focus {
   outline: none;
 }
+.portfolio-modal .modal-content p {
+  text-align: left;
+}
+
+.portfolio-modal .modal-content ul.instructions {
+  text-align: left;
+}
+
 .portfolio-modal .modal-content {
   border-radius: 0;
   background-clip: border-box;
