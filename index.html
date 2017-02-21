@@ -10,7 +10,8 @@
     <meta name="author" content="">
 
     <title>Travis Cook - Programming &amp UX</title>
-
+    
+    <link href="mail/contact_me.php">
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 
@@ -28,7 +29,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    {% include head.html %}
+
     {% seo %}
 </head>
 
@@ -52,13 +53,13 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#resume">Resume</a>
-                    </li>
-                    <li class="page-scroll">
                         <a href="#about">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#resume">Resumé</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#portfolio">Portfolio</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#contact">Contact</a>
@@ -85,6 +86,98 @@
             </div>
         </div>
     </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>About</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-2">
+                    <p>Hi my name Travis</p>
+                </div>
+                <div class="col-lg-4">
+                    <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <!-- resume section -->
+    <section class="success" id="resume">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Resumé</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-lg-offset-1">
+                    <h3 class="center">Education</h3>
+                    <hr>
+                    <p>
+                        <b>Computer Science, B.S.</b>
+                        <br><em>Abilene Christian University</br>Expected December 2017</em>
+                        <ul>
+                            <li>Software Engineering Concentration</br></li>
+                            <li>Spanish Minor</li>
+                            <li>Presidential Scholar Award Recipient</br></li>
+                            <li>GPA: 3.44</li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="col-lg-3">
+                    <h3 class="center">Experience</h3>
+                    <hr>
+                    <p>
+                        <b>Student Human Resources Supervisor</b>
+                        <br><em>ACU Technology Support</br>May 2016-Present</em>
+                        <ul>
+                            <li>Review applications and conduct interviews</br></li>
+                            <li>Create work schedule for student workers</br></li>
+                            <li>Manage disciplinary actions and employee terminations</br></li>
+                        </ul>
+                    </p>
+                    <p>
+                        <b>Student Technician</b>
+                        <br><em>ACU Technology Support</br>Jan 2014-Present</em>
+                        <ul>
+                            <li>Independantly assist faculty, staff, and students with technology support</br></li>
+                            <li>Troubleshoot and repair computers, mobile devices, and other electronics</br></li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="col-lg-3">
+                    <h3 class="center">Projects</h3>
+                    <hr>
+                    <p>
+                        <b>Human Computer Interaction</b>
+                        <ul>
+                            <li>Developed and test usability for website design</li>
+                        </ul>
+                    </p>
+                    <p>
+                        <b>Web Development</b>
+                        <ul>
+                            <li>Created forum for reading and submitting stories using HTML, CCS3, Javascript, PHP, and SQL</li>
+                        </ul>
+                    </p>
+                    <p>
+                        <b>Programming</b>
+                        <ul>
+                            <li>Created 'Dungeon Style' text-based game with Object Oriented principles in C++</li>
+                            <li>Created Maze Solver program using Flood Fill algorithm in C#</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Portfolio Grid Section -->
     <section id="portfolio">
@@ -159,44 +252,6 @@
             </div>
         </div>
     </section>
-    <!-- resume section -->
-    <section class="success" id="resume">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Resume</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p>Here be my resume</p>
-                </div>
-                <div class="col-lg-4">
-                    <p>fasdfa</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- About Section -->
-    <section id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>About</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
-                </div>
-                <div class="col-lg-4">
-                    <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Contact Section -->
     <section class="success" id="contact">
@@ -204,7 +259,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>Contact Me</h2>
-                    <hr class="star-primary">
+                    <hr class="star-light">
                 </div>
             </div>
             <div class="row">
@@ -266,13 +321,13 @@
                         <h3>Around the Web</h3>
                         <ul class="list-inline">
                             <li>
-                                <a href="facebook.com/travis.cook1" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                                <a href="https://facebook.com/travis.cook1" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
                             </li>
                             <li>
                                 <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
                             </li>
                             <li>
-                                <a href="twitter.com/travesto" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                                <a href="https://twitter.com/travesto" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
                             </li>
                             <li>
                                 <a href="https://www.linkedin.com/in/travis-cook-3b7567121/" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
