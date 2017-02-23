@@ -22,6 +22,9 @@ a.active {
   color: #B8AE9C;
   outline: none;
 }
+a.res{
+  color: #FFFFFF;
+}
 ul {
   font-size: 125%;
   align-content: left;
@@ -37,6 +40,9 @@ h6 {
   font-weight: 700;
 }
 h3.center {
+  text-align: center;
+}
+h4.center {
   text-align: center;
 }
 hr.star-light,
