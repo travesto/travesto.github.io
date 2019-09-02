@@ -6,6 +6,7 @@
     --grey: #565461;
 }
 
+
 .flexColumn.about {
     margin: 64px 32px 64px;
     flex-grow: 1;
@@ -80,4 +81,46 @@ a:hover {
     justify-content: flex-start;
     align-items: stretch;
     flex: 1;
+}
+
+@media only screen and (max-width: 376px) {
+    a {
+        text-decoration: underline;
+    }
+    .contents {
+        padding: 16px;
+        font-size: 1.2rem;
+    }
+    .divider {
+        display: none;
+    }
+    .flexColumn.about {
+        margin: 0;
+    }
+    .flexContainer {
+        display: flex;
+        padding: 32px;
+        justify-content: flex-start;
+        align-items: stretch;
+        flex: 1;
+        flex-direction: column;
+    }
+    .links > ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    .pageTitle {
+        display: flex;
+        justify-content: space-around;
+        padding: 0 20%;
+        margin-bottom: -16px;
+    }
+    .title {
+        font-size: 2rem;
+        font-weight: 600;
+        color: var(--blue);
+        text-align: right;
+        line-height: 1;
+        padding: 0
+    }
 }
