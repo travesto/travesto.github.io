@@ -1,6 +1,6 @@
 :root {
     --white: #F0F0F2;
-    --blue: #D9B26A;
+    --blue: #6aa84f;
     --green: #404040;
     --brown: #8C7549;
     --grey: #0D1826;
@@ -8,10 +8,10 @@
 
 
 .flexColumn.about {
-    margin: 64px 32px 64px;
+    margin: 0 32px 32px;
     flex-grow: 1;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-color: var(--white);
+    background-color: #ececeb;
 }
 
 .borderRight {
@@ -54,7 +54,7 @@ a:hover {
     margin: 0;
 }
 .serif {
-    font-family: 'Lora', serif;
+    font-family: 'Oswald';
 }
 
 .sans {
@@ -87,9 +87,6 @@ a:hover {
 }
 
 @media only screen and (max-width: 1024px) {
-    a {
-        text-decoration: underline;
-    }
     .contents {
         padding: 16px;
         font-size: 1.2rem;
@@ -98,7 +95,7 @@ a:hover {
         display: none;
     }
     .flexColumn.about {
-        margin: 0;
+        margin: 16px;
     }
     .flexContainer {
         display: flex;
@@ -111,6 +108,7 @@ a:hover {
     .links > ul {
         display: flex;
         justify-content: space-between;
+        padding: 8px;
     }
     .pageTitle {
         display: flex;
@@ -119,7 +117,7 @@ a:hover {
         margin-bottom: -16px;
     }
     .spacer {
-        width: 16px;
+        width: 8px;
     }
     .title {
         font-size: 2rem;
