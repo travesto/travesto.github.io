@@ -11,7 +11,7 @@
     margin: 32px;
     flex-grow: 1;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-color: #ececeb;
+    background-color: var(--white);
 }
 
 .borderRight {
@@ -90,6 +90,53 @@ a:hover {
     flex: 1;
 }
 
+.grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.gridButton {
+    height: 48px;
+    font-size: 1rem;
+    color: #6aa84f;
+    font-weight: bold;
+    border: #6aa84f 2px solid;
+    border-radius: 5px;
+}
+
+.gridButton:hover {
+    color: #fff;
+    background-color: #6aa84f;
+}
+
+.gridDescrip {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-bottom: 32px;
+}
+
+.gridImage {
+    max-width: 50%;
+}
+
+.gridItem {
+    max-width: 42%;
+    flex-direction: row;
+    padding: 16px 32px 0 0;
+}
+
+.gridItemTitle {
+    font-size: 2rem;
+}
+
+.gridItemTitle > div {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1rem;
+    padding: 16px 0;
+}
+
+
 @media only screen and (max-width: 1024px) {
     .contents {
         padding: 16px;
@@ -157,6 +204,16 @@ a:hover {
         flex: 1;
         flex-direction: column;
     }
+
+    .gridImage {
+        display: none;
+    }
+
+    .gridItem {
+        max-width: 100%;
+        padding: 16px 16px 0 16px;
+    }
+
     .links {
         display: none;
     }
@@ -169,7 +226,7 @@ a:hover {
     .list {
         padding: 24px 0;
     }
-    
+
     .pageTitle {
         display: flex;
         justify-content: center;
