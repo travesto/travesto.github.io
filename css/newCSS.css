@@ -90,6 +90,10 @@ a:hover {
     flex: 1;
 }
 
+.full {
+    flex-grow: 1;
+}
+
 .grid {
     flex-direction: row;
     flex-wrap: wrap;
@@ -104,9 +108,19 @@ a:hover {
     border-radius: 5px;
 }
 
+.gridButton > a {
+    color: #6aa84f;
+}
+
 .gridButton:hover {
     color: #fff;
     background-color: #6aa84f;
+}
+
+.gridButton:hover > a {
+    color: #fff;
+    background-color: #6aa84f;
+    text-decoration: none;
 }
 
 .gridDescrip {
@@ -136,6 +150,43 @@ a:hover {
     padding: 16px 0;
 }
 
+.hero {
+    max-width: 33%;
+    max-height: 66%;
+}
+
+.portfolio {
+    max-width: 100%;
+    padding: 48px;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.portfolioSubhead {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #404040;
+}
+
+.portfolioText {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1rem;
+    color:#404040;
+    font-weight: 400;
+}
+
+.portfolioTitle {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #6aa84f;
+    margin-left: 32px;
+}
+
+@media only screen and (max-width: 1585px) {
+    .gridItem {
+        max-width: 100%;
+    }
+}
 
 @media only screen and (max-width: 1024px) {
     .contents {
@@ -232,6 +283,14 @@ a:hover {
         justify-content: center;
         padding: 0 20%;
         margin-bottom: 16px;
+    }
+
+    .portfolio{
+        margin: 16px;
+    }
+
+    .portfolioTitle{
+        margin-left: 0;
     }
     .spacer {
         width: 8px;
