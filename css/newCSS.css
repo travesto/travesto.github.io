@@ -265,6 +265,12 @@ a:hover {
         padding: 16px 16px 0 16px;
     }
 
+    .hero {
+        max-width: 100%;
+        display: block;
+        padding-bottom: 16px;
+    }
+
     .links {
         display: none;
     }
@@ -287,6 +293,7 @@ a:hover {
 
     .portfolio{
         margin: 16px;
+        flex-direction: column;
     }
 
     .portfolioTitle{
