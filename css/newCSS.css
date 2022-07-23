@@ -1,5 +1,5 @@
 :root {
-    --white: #F0F0F2;
+    --white: #fff;
     --blue: #6aa84f;
     --green: #404040;
     --brown: #8C7549;
@@ -53,9 +53,15 @@ a:hover {
     font-size: 1.2rem;
 }
 
+.list {
+    position: sticky;
+    top:64px;
+}
+
 .page {
     min-height: 100%;
     margin: 0;
+    background-color: #ececeb;
 }
 .serif {
     font-family: 'Oswald';
@@ -68,6 +74,13 @@ a:hover {
 .spacer {
     width: 0;
 }
+
+.stickyNav {
+    position: sticky;
+    top: -8px;
+    background: #ececeb;
+}
+
 .title {
     font-size: 6rem;
     font-weight: 600;
@@ -156,7 +169,7 @@ a:hover {
 }
 
 .pdf {
-    width: 100%;
+    max-width: 66%;
 }
 
 .portfolio {
@@ -297,6 +310,10 @@ a:hover {
         justify-content: center;
         padding: 0 20%;
         margin-bottom: 16px;
+    }
+
+    .pdf {
+        max-width: 100%;
     }
 
     .portfolio{
