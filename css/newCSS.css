@@ -21,7 +21,7 @@
 
 .contents {
     padding: 64px;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: var(--grey);
 }
 
@@ -155,6 +155,10 @@ a:hover {
     max-height: 66%;
 }
 
+.pdf {
+    width: 100%;
+}
+
 .portfolio {
     max-width: 100%;
     padding: 48px;
@@ -180,6 +184,10 @@ a:hover {
     font-weight: bold;
     color: #6aa84f;
     margin-left: 32px;
+}
+
+.subButton {
+    margin: 0 32px;
 }
 
 @media only screen and (max-width: 1585px) {
