@@ -21,7 +21,7 @@
 
 .contents {
     padding: 64px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: var(--grey);
 }
 
@@ -105,7 +105,7 @@ a:hover {
 }
 
 .full {
-    flex-grow: 1;
+    max-width: 66%;
 }
 
 .grid {
@@ -120,6 +120,7 @@ a:hover {
     font-weight: bold;
     border: #6aa84f 2px solid;
     border-radius: 5px;
+    margin-top: 24px;
 }
 
 .gridButton > a {
@@ -148,25 +149,57 @@ a:hover {
     max-width: 50%;
 }
 
+.gridImage.mobile{
+    display: none;
+}
+
 .gridItem {
-    max-width: 42%;
+    max-width: 40%;
     flex-direction: row;
     padding: 16px 32px 0 0;
 }
 
 .gridItemTitle {
     font-size: 2rem;
+    padding: 16px 0;
 }
 
 .gridItemTitle > div {
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 1rem;
-    padding: 16px 0;
+    /* padding: 16px 0; */
 }
 
+.gridSubText {
+    padding-bottom: 16px;
+}
+
+
 .hero {
-    max-width: 33%;
-    max-height: 66%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.imageContainer {
+    display: flex;
+    align-items: center;
+    margin: 0 -48px
+}
+
+.imageContainer.colored{
+    background: #99B78D;
+}
+
+.imageContainer > .gridImage {
+    height: 100%;
+}
+
+.imageContainer.twocolumn {
+    align-items: flex-start;
+}
+
+.imageContainer.twocolumn > .gridImage{
+    padding-top: 48px;
 }
 
 .pdf {
@@ -176,35 +209,57 @@ a:hover {
 .portfolio {
     max-width: 100%;
     padding: 48px;
-    flex-direction: row;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
 }
 
 .portfolioSubhead {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #404040;
+    color: #000;
+    padding: 24px 0;
 }
+
+.left{
+    padding: 24px;;
+}
+
+.right {
+    padding: 24px;
+}
+
+
 
 .portfolioText {
     font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 1rem;
-    color:#404040;
+    font-size: 1.1rem;
+    color:#000;
     font-weight: 400;
+    margin-bottom: 32px;
 }
 
 .portfolioTitle {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
     color: #6aa84f;
-    margin-left: 32px;
 }
 
 .subButton {
     margin: 0 32px;
 }
 
-@media only screen and (max-width: 1585px) {
+.twocolumn {
+    padding: 0 48px;
+}
+
+@media screen and (max-width: 1440px) {
+    .full {
+        max-width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 1560px) {
     .gridItem {
         max-width: 100%;
     }
@@ -213,7 +268,6 @@ a:hover {
 @media only screen and (max-width: 1024px) {
     .contents {
         padding: 16px;
-        font-size: 1.2rem;
     }
     .divider {
         display: none;
@@ -278,19 +332,42 @@ a:hover {
         flex-direction: column;
     }
 
-    .gridImage {
+    .gridImage.desktop{
         display: none;
+    }
+
+    .gridImage.mobile{
+        display: block;
     }
 
     .gridItem {
         max-width: 100%;
         padding: 16px 16px 0 16px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gridItemTitle {
+        text-align: center;
+    }
+
+    .gridItemTitle > div {
+        text-align: left;
     }
 
     .hero {
         max-width: 100%;
         display: block;
         padding-bottom: 16px;
+    }
+
+    .imageContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imageContainer > .gridImage {
+        max-width: 100%;
     }
 
     .links {
